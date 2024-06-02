@@ -1,0 +1,1 @@
+This is a same text message generated to sent a .txt file from client to server
