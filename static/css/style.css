@@ -1,0 +1,136 @@
+html, body {
+    height: 99%;
+    overflow: hidden;
+}
+body {
+    background-image: linear-gradient(45deg, #05124b, #01020b,#220338);
+    background-size: 300%,300%;
+    animation: color 15s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:1vw;
+    margin-top: 10vw;
+}
+
+.join{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.create-btn{
+    width:100%;
+}
+
+
+.message-box{
+    margin: 5vw;
+    border-style: solid;
+    background-color: rgba(2, 16, 47, 0.204);
+    box-shadow: 2px black;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: stretch;
+}
+
+
+#messages{
+    overflow-y: scroll;
+    flex: 1;
+    width: 80vw;
+}
+
+.inputs{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+label{
+    color: aliceblue;
+}
+
+#message{
+    flex: 1;
+}
+
+#send-btn{
+    background-color: rgb(151, 251, 136);
+    width: 10vw;
+    padding: 10px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#send-btn:hover {
+        color: rgb(12, 86, 12);
+        background-color: rgb(0, 255, 0);
+}
+
+.join-btn{
+    margin-left: 1vw;
+}
+.create-btn:hover {
+    color: rgb(248, 8, 8);
+    background-color: rgb(80, 40, 40);
+}
+
+.join-btn:hover {
+    color: rgb(10, 242, 10);
+    background-color: rgb(36, 71, 36);
+}
+
+.error {
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text {
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.muted {
+    font-size: 10px;
+    color:bisque;
+    display: block;
+    color: gray;
+    font-size: 0.8em;
+}
